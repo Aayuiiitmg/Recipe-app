@@ -1,0 +1,87 @@
+body{
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fdfdfd;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.card{
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.card:hover{
+  transform: scale(1.03);
+}
+.card img{
+  width: 100%;
+  border-radius: 12px;
+}
+.card h3{
+  font-size: 20px;
+  margin: 10px 0;
+  color: #222;
+}
+.feedback-section{
+  padding: 20px;
+  background: #fafafa;
+  border-top: 2px solid #eee;
+  text-align: center;
+}
+.feedback-section h2{
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.feedback-section textarea{
+  width: 80%;
+  max-width: 500px;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid #2d1070;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+  resize: none;
+}
+.feedback-section button{
+  background: linear-gradient(90deg, #172e71, #07711a);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.feedback-section button:hover{
+  opacity: 0.9;
+}
+.feedback-list{
+  margin-top: 15px;
+  text-align: left;
+  display: inline-block;
+}
+.feedback-list ul{
+  padding-left: 20px;
+}
+footer{
+  text-align: center;
+  padding: 15px;
+  background: #1826bf;
+  color: white;
+  margin-top: auto;
+  font-size: 14px;
+}

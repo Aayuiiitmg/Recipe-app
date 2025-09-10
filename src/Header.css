@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+  background: linear-gradient(90deg, #1826bf, #ac109c);
+  padding: 20px 30px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(172, 16, 156, 0.8); /* glowing purple-pink */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 10px;
+  animation: headerGlow 1s;
+}
+@keyframes headerGlow{
+  from{
+    box-shadow: 0 0 15px rgba(24, 38, 191, 0.7),
+                0 0 30px rgba(172, 16, 156, 0.7);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(24, 38, 191, 1),
+                0 0 50px rgba(172, 16, 156, 1);
+  }
+}
+.logo{
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.logo:hover{
+  transform: scale(1.1);
+  color: #ffe082; 
+}
